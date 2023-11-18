@@ -3,7 +3,8 @@ table {
   margin-bottom: 20px;
   border-collapse: collapse;
 
-  th, td {
+  th,
+  td {
     padding: 8px;
     border: 1px solid #ddd;
     text-align: left;
@@ -11,6 +12,12 @@ table {
 
   th {
     background-color: #f2f2f2;
+
+    & button {
+      margin: 0 5px;
+      padding: 0 5px;
+      cursor: grab;
+    }
   }
 
   tr:nth-child(even) {

@@ -15,3 +15,12 @@ export interface IEmployee {
   salary: number;
   department: string;
 }
+
+export interface ITableProps {
+  currentEmployees: IEmployee[];
+  columns: {
+    accessorKey: string;
+    id: string;
+    header: string;
+  }[];
+}
