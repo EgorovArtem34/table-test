@@ -90,8 +90,8 @@ const DraggableColumnHeader: React.FC<{
       <div ref={previewRef}>
         {header.isPlaceholder
           ? null
-          : flexRender(header.column.columnDef.header, header.getContext())}
-        <button ref={dragRef}>🟰</button>
+          : <button ref={dragRef} className="dragBtn">{flexRender(header.column.columnDef.header, header.getContext())}</button>
+        }
       </div>
     </th>
   )
